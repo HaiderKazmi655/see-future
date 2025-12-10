@@ -29,5 +29,16 @@
   </main>
 
   <script src="script.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "@vercel/analytics": "https://unpkg.com/@vercel/analytics@latest?module"
+    }
+  }
+  </script>
+  <script type="module">
+    import { inject } from "@vercel/analytics";
+    inject();
+  </script>
 </body>
 </html>

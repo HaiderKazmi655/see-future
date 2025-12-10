@@ -33,6 +33,20 @@
       <div class="actions">
         <a class="btn primary" href="scan.html">Get Started</a>
       </div>
+      <div class="prediction">
+        <article class="card">
+          <div class="card-header highlight">Wasay</div>
+          <div class="card-body">2nd Relando in our school 
+            <img class="profile-img" src="ddd.jpg" alt="Wasay image">
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-header highlight">Sudais</div>
+          <div class="card-body">Hacker ha bahi Hacker
+            <img class="profile-img" src="hacker.jpg" alt="Sudais image">
+          </div>
+        </article>
+      </div>
     </div>
   </main>
 
@@ -61,5 +75,16 @@
   </footer>
 
   <script src="script.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "@vercel/analytics": "https://unpkg.com/@vercel/analytics@latest?module"
+    }
+  }
+  </script>
+  <script type="module">
+    import { inject } from "@vercel/analytics";
+    inject();
+  </script>
 </body>
 </html>

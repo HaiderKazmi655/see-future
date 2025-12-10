@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@vercel/analytics": "^1.6.1"
+  },
+  "name": "aa",
+  "version": "1.0.0",
+  "main": "scan.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaiderKazmi655/see-future.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaiderKazmi655/see-future/issues"
+  },
+  "homepage": "https://github.com/HaiderKazmi655/see-future#readme",
+  "description": ""
+}
