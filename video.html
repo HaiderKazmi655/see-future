@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal • See Your Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .video-wrap{min-height:70vh;display:grid;place-items:center;padding:40px 24px}
+    video{max-width:960px;width:90vw;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.45)}
+  </style>
+  </head>
+<body>
+  <canvas id="stars"></canvas>
+  <header class="nav">
+    <div class="container">
+      <div class="brand">See Your Future</div>
+      <nav class="links">
+        <a href="index.html#home">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="video-wrap">
+    <video src="meme.mp4" autoplay playsinline controls loop></video>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
