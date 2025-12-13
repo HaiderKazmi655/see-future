@@ -26,10 +26,21 @@
   </header>
 
   <main class="video-wrap">
+    <div class="scan-title" id="predTitle"></div>
+    <div class="scan-note" id="predNote"></div>
     <video src="meme.mp4" autoplay playsinline controls loop></video>
   </main>
 
   <script src="script.js"></script>
+  <script>
+    const qp = new URLSearchParams(location.search);
+    const name = qp.get('name') || localStorage.getItem('syf_name') || '';
+    const dob = qp.get('dob') || localStorage.getItem('syf_dob') || '';
+    const t = document.getElementById('predTitle');
+    const n = document.getElementById('predNote');
+    if (t) t.textContent = name ? `Prediction for ${name}` : 'Prediction';
+    if (n) n.textContent = dob ? `DOB: ${dob}` : '';
+  </script>
   <script type="importmap">
   {
     "imports": {

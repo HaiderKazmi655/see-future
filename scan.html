@@ -25,6 +25,17 @@
   <main class="scan">
     <div class="scan-inner">
       <div class="scan-title">Place Your Hand</div>
+      <form class="scan-form" id="scanForm" autocomplete="on">
+        <div class="form-row">
+          <label class="label" for="nameInput">Name</label>
+          <input class="input" id="nameInput" name="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-row">
+          <label class="label" for="dobInput">Date of Birth</label>
+          <input class="input" id="dobInput" name="dob" type="date" required>
+        </div>
+        <div class="form-msg" id="formMsg" aria-live="polite"></div>
+      </form>
       <div class="scanner">
         <svg class="hand" viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>

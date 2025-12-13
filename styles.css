@@ -183,6 +183,21 @@ body {
   padding: 40px 24px;
 }
 .scan-inner { text-align: center; }
+.scan-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 520px; margin: 0 auto 14px; }
+.form-row { display: flex; flex-direction: column; text-align: left; }
+.label { font-weight: 700; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.input {
+  appearance: none;
+  border: 1px solid rgba(124,60,255,0.35);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  outline: none;
+  transition: box-shadow 180ms ease, border-color 180ms ease;
+}
+.input:focus { box-shadow: 0 0 0 6px rgba(124,60,255,0.25); border-color: var(--neon); }
+.form-msg { min-height: 18px; font-size: 13px; color: #ff7c7c; text-align: left; grid-column: 1 / -1; }
 .scan-title {
   font-family: 'Orbitron';
   font-weight: 800;
