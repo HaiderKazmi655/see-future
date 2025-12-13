@@ -49,6 +49,7 @@ body {
   opacity: 0.8;
 }
 .links a:hover { opacity: 1; color: white; }
+.links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 
 .hero {
   min-height: 70vh;
@@ -174,6 +175,28 @@ body {
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
   .prediction { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .scan-form { grid-template-columns: 1fr; }
+  .actions { flex-direction: column; }
+  .btn { width: 100%; max-width: 360px; }
+}
+
+@media (max-width: 600px) {
+  .nav .container { height: 60px; }
+  .links a { margin-left: 0; }
+  .hero { padding: 48px 16px 16px; }
+  .subtitle { font-size: clamp(15px, 3.5vw, 18px); }
+}
+
+@media (max-width: 480px) {
+  .profile-img { width: 160px; height: 160px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-header.highlight { animation: none; }
+  .beam { animation: none; }
 }
 
 .scan {

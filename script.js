@@ -2,6 +2,7 @@ const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
 let stars = [];
 let w = 0, h = 0;
+let reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function resize() {
   w = canvas.width = window.innerWidth;
@@ -28,12 +29,17 @@ function step() {
     ctx.fillStyle = `rgba(255,255,255,${alpha})`;
     ctx.fill();
   }
-  requestAnimationFrame(step);
+  if (!reduceMotion) requestAnimationFrame(step);
 }
 
 window.addEventListener('resize', resize);
 resize();
-requestAnimationFrame(step);
+step();
+
+window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', (e) => {
+  reduceMotion = e.matches;
+  step();
+});
 
 const cards = document.querySelectorAll('.card');
 for (const card of cards) {
